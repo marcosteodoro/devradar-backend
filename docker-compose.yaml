@@ -1,0 +1,17 @@
+version: '3'
+
+volumes:
+  # MongoDB Data
+  my-finances-mongodb-data:
+    driver: local
+
+services:
+  mongodb:
+    image: mongo
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: toor
+    ports:
+      - "27017:27017"
+    volumes:
+      - my-finances-mongodb-data:/data/db
