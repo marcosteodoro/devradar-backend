@@ -13,7 +13,13 @@ docker-compose up -d
 
 Para o funcionamento do backend da aplicação são necessários o Node.js e o yarn instalados em sua máquina.
 
-O seguinte comando inicia a API: 
+Primeiramente precisamos realizar o download das dependências do projeto com o comando: 
+
+```
+yarn install
+```
+
+E logo após rodamos o seguinte comando para iniciar a API: 
 
 ```bash
   yarn dev
